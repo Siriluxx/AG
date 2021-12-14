@@ -12,6 +12,7 @@ from fastapi.responses import PlainTextResponse
 
 app = FastAPI()
 
+@app.get("/sirilux")
 def sirilux():
     return 'hello sirilux'
 
