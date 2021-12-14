@@ -16,6 +16,10 @@ app = FastAPI()
 def sirilux():
     return 'hello sirilux'
 
+@app.get("/add")
+async def add(a: int = 6, b: int = 9):
+    return a+b
+
 def result(res):
     return {"result":res}
 
